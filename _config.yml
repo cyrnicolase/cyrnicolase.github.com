@@ -1,0 +1,6 @@
+baseurl: ""
+markdown: redcarpet
+pygments: true
+safe: false
+lsi: false
+excerpt_separator: "\n\n\n"
