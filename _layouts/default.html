@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset='utf-8'>
-<title>{{ page.title }}</title>
-</head>
-<body>
-    <header>
-    </header>
-    
-    <aside>
-    </aside>
-    
-    <article>
-        {{ content }}
-    </article>
-    
-    <footer>
-    </footer>
-</body>
-</html>
+{% include header.html %}
+
+<div class="container container-left">
+    <div class="row">
+        <div class="col-md-3 hidden-xs">
+            {% include sidebar.html %}
+        </div>
+        <div class="col-md-9">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}
