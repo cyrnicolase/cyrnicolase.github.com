@@ -2,7 +2,7 @@
 layout: post
 title: "在Cookie被禁用的时候Session是否还可以被使用"
 date: 2015-04-18
-comments: true
+comments: false
 ---
 
 
