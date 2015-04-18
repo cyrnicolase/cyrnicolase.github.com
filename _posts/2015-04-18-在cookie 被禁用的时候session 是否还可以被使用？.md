@@ -1,4 +1,12 @@
-在cookie 被禁用的时候session 是否还可以被使用？
+---
+layout: post
+title: "在Cookie被禁用的时候Session是否还可以被使用"
+date: 2015-04-18
+comments: true
+---
+
+
+在cookie被禁用的时候session是否还可以被使用？
 ===
 + 对于这个问题，其实就PHP 而言答案不是绝对的。首先需要明确两个概念，session 是记录在服务器端的，而cookie 是记录在客户端（即浏览器中的）所以，session是比cookie 更加安全的一种保存文件信息的。
 
