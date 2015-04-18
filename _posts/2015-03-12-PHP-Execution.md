@@ -6,7 +6,7 @@ comments: true
 ---
 
 ### PHP 执行过程
-PHP 缓存分两种：
+**PHP 缓存分两种:**
 + 编译缓存：就是对PHP编译后的OPCODE 进行缓存，比如：APC, Accelerator, xcache 等
 + 数据缓存：memcached，memcache，redis（这些是对数据库的数句缓存）。针对PHP 模板数据进行缓存的工具主要有smarty 等。
 
