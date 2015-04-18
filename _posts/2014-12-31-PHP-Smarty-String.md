@@ -1,4 +1,10 @@
-@(014_PHP)
+---
+layout: post
+title: "smarty 判断变量是字符串还是数组"
+date: 2014-12-31
+comments: true
+---
+
 ### smarty 判断变量是字符串还是数组
 
 ``` SMARTY

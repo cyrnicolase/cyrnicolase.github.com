@@ -1,4 +1,10 @@
-@(014_PHP)
+---
+layout: post
+title: "PHP执行过程"
+date: 2015-03-12
+comments: true
+---
+
 ### PHP 执行过程
 PHP 缓存分两种：
 + 编译缓存：就是对PHP编译后的OPCODE 进行缓存，比如：APC, Accelerator, xcache 等

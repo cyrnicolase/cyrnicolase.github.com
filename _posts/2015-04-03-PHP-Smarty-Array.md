@@ -1,4 +1,11 @@
-@(014_PHP)
+---
+layout: post
+title: "Smarty判断数组是否为空"
+date: 2015-04-03
+comments: false
+---
+
+
 ### smarty判断数组是否为空
 > 在smarty 模板引擎中市场会用到判断数组是否为空，然后非空的时候进行操作。其方法有如下两种
 
