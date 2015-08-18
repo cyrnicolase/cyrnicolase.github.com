@@ -1,51 +1,45 @@
-body {
-    padding-top: 60px;
-    padding-bottom: 60px;
+html,body {
+	height: 100%;
 }
 
-.copyright {
-    color: #ffffff;
+.row {
+	height: 100%;
 }
 
-.footer {
-    text-align: center;
+.aside1 {
+	height: 100%;
+	background-color: #337ab7;
 }
 
-.footer a {
-    color: #ee4444;
+.aside2 {
+	height: 100%;
 }
 
-.sidebar h1 {
-    color: #ee4444;
-    font-size: 1.3em;
+.aside3 {
+	height: 100%;
+	overflow: scroll;
 }
 
-.sidebar a {
-    color: #428bca;
+.title-nav {
+	padding-top: 200px; 
+	background-color: #fff;
+	height: 100%;
 }
 
-.sidebar li {
-    margin-top: .7em;
-    line-height: 1em;
+.nav-pills>li>a {text-align: center;}
+
+.title-list {
+	padding-top: 150px;
+	height: 100%;
+	padding-left: 30px;
+	padding-right: 1px;
 }
 
-.sidebar a:hover {
-    color: #3071a9;
+.panel-tab {
+	display: none;
 }
 
-.container-left {
-    margin: 0;
-}
-
-.well h1 {
-    color: #ee4444;
-    font-size: 1.3em;
-}
-
-.author {
-    color: #ee4444;
-}
-
-.author a {
-    color: #ee4444;
+.title-list li {
+	border: 0px;
+	background-color: #fff;
 }

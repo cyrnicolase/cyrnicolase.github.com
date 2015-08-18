@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "在Cookie被禁用的时候Session是否还可以被使用"
+tag: "php"
+title: "COOKIE与SESSION"
 date: 2015-04-18
 comments: false
 ---
