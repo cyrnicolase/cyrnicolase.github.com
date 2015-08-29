@@ -1,6 +1,6 @@
 ---
 layout: post
-tag: "php"
+category: php
 title: "PHP执行过程"
 date: 2015-03-12
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-tag: php
+category: php
 title: "Smarty判断数组是否为空"
 date: 2015-04-03
 comments: false

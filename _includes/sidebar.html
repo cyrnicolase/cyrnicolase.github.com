@@ -1,64 +1,27 @@
 <div class="row">
   <!--head begin-->
-  <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 aside2">          
+  <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 aside2">          
     <div class="title-nav" role="navigation">
       <ul class="nav nav-pills nav-stacked">
-        <li role="presentation" class="active"><a href="#读书">读书</a></li>
-        <li role="presentation"><a href="#生活">生活</a></li>
-        <li role="presentation"><a href="#技术">技术</a></li>
-        <li role="presentation"><a href="#科研">科研</a></li>
-        <li role="presentation"><a href="#标签">标签</a></li>
+        {% for category in site.categories %}
+          <li role="presentation"><a href="#{{category | first}}">{{category | first}}</a></li>
+        {% endfor %}
       </ul>
     </div>
   </div>
   <!--head end--> 
+
   <div class="col-md-8 col-lg-8 col-sm-8 col-xs-8 aside2">
     <div class="title-list">
-      <div class="panel panel-default panel-tab" id="读书">
-        <div class="list-group">
-          <a href="#" class="list-group-item">2013年读书</a>
-          <a href="#" class="list-group-item">2013年读书</a>
-          <a href="#" class="list-group-item">2013年读书</a>
-          <a href="#" class="list-group-item">2013年读书</a>
-          <a href="#" class="list-group-item">2013年读书</a>
+      {% for category in site.categories %}
+        <div class="panel panel-default panel-tab"  id="{{category | first}}">
+          <div class="list-group">
+            {% for post in category.last %}
+              <a href="{{ post.url }}" class="list-group-item">{{ post.title }}</a>
+            {% endfor %}
+          </div>
         </div>
-      </div>
-      <div class="panel panel-default panel-tab" id="生活">
-        <div class="list-group">
-          <a href="#" class="list-group-item">2014年读书</a>
-          <a href="#" class="list-group-item">2014年读书</a>
-          <a href="#" class="list-group-item">2014年读书</a>
-          <a href="#" class="list-group-item">2014年读书</a>
-          <a href="#" class="list-group-item">2014年读书</a>
-        </div>
-      </div>
-      <div class="panel panel-default panel-tab" id="技术">
-        <div class="list-group">
-          <a href="#" class="list-group-item">2015年读书</a>
-          <a href="#" class="list-group-item">2015年读书</a>
-          <a href="#" class="list-group-item">2015年读书</a>
-          <a href="#" class="list-group-item">2015年读书</a>
-          <a href="#" class="list-group-item">2015年读书</a>
-        </div>
-      </div>
-      <div class="panel panel-default panel-tab" id="科研" >
-        <div class="list-group">
-          <a href="#" class="list-group-item">2016年读书</a>
-          <a href="#" class="list-group-item">2016年读书</a>
-          <a href="#" class="list-group-item">2016年读书</a>
-          <a href="#" class="list-group-item">2016年读书</a>
-          <a href="#" class="list-group-item">2016年读书</a>
-        </div>
-      </div>
-      <div class="panel panel-default panel-tab" id="标签" >
-        <div class="list-group">
-          <a href="#" class="list-group-item">2017年读书</a>
-          <a href="#" class="list-group-item">2017年读书</a>
-          <a href="#" class="list-group-item">2017年读书</a>
-          <a href="#" class="list-group-item">2017年读书</a>
-          <a href="#" class="list-group-item">2017年读书</a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>

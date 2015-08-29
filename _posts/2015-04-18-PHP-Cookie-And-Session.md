@@ -1,6 +1,6 @@
 ---
 layout: post
-tag: "php"
+cagegory: php
 title: "COOKIE与SESSION"
 date: 2015-04-18
 comments: false

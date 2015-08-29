@@ -27,16 +27,19 @@ html,body {
 }
 
 .nav-pills>li>a {text-align: center;}
+.nav>li>a {padding-top: 10px; padding-left: 0px; padding-right: 0px;}
 
 .title-list {
 	padding-top: 150px;
 	height: 100%;
-	padding-left: 30px;
-	padding-right: 1px;
 }
 
 .panel-tab {
 	display: none;
+}
+
+.panel-tab-show {
+	display: block;
 }
 
 .title-list li {
