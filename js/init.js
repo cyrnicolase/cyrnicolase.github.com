@@ -1,19 +1,12 @@
 $(function() {
-	
-	var firstCate = $("li[role='presentation']").first();
-	$(firstCate).addClass("active");
-	var firstPanel = $(firstCate).find("a").first().attr("href");
-	$(firstPanel).addClass("panel-tab-show");
 
+	// 初始化展现第一个tab
+	$("#my-nav a:first").tab("show");
 
-	$("li[role='presentation']").click(function() {
-		$("li[role='presentation']").removeClass("active");
-		$(this).addClass("active");
-		var target = $(this).find("a").first().attr("href");
-
-		$(".panel-tab").removeClass("panel-tab-show");
-		$(target).addClass("panel-tab-show");
+	// 点击按钮后展现
+	$("#my-nav a").bind("click", function(e) {
+		e.preventDefault();
+		$(this).tab("show");
 	});
-
 });
 

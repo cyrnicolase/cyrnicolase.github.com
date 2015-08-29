@@ -2,7 +2,7 @@
   <!--head begin-->
   <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 aside2">          
     <div class="title-nav" role="navigation">
-      <ul class="nav nav-pills nav-stacked">
+      <ul class="nav nav-pills nav-stacked" id="my-nav">
         {% for category in site.categories %}
           <li role="presentation"><a href="#{{category | first}}">{{category | first}}</a></li>
         {% endfor %}
@@ -11,6 +11,23 @@
   </div>
   <!--head end--> 
 
+  <div class="col-md-8 aside2">
+    <div class="title-list">
+      <div class="tab-content">
+        {% for category in site.categories %}
+          <div class="tab-pane" id="{{category | first}}">
+            <div class="list-group">
+              {% for post in category.last %}
+                <a href="{{ post.url }}" class="list-group-item">{{ post.title }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <!--
   <div class="col-md-8 col-lg-8 col-sm-8 col-xs-8 aside2">
     <div class="title-list">
       {% for category in site.categories %}
@@ -24,4 +41,5 @@
       {% endfor %}
     </div>
   </div>
+  -->
 </div>

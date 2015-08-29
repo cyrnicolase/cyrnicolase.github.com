@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 category: lamp-lnmp
 title: "Redis 集群搭建步骤"
 date: 2015-04-20

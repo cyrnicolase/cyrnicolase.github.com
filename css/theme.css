@@ -28,21 +28,5 @@ html,body {
 
 .nav-pills>li>a {text-align: center;}
 .nav>li>a {padding-top: 10px; padding-left: 0px; padding-right: 0px;}
-
-.title-list {
-	padding-top: 150px;
-	height: 100%;
-}
-
-.panel-tab {
-	display: none;
-}
-
-.panel-tab-show {
-	display: block;
-}
-
-.title-list li {
-	border: 0px;
-	background-color: #fff;
-}
+.title-list {padding-top: 150px;}
+.content {display: none;}
